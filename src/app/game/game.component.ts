@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent {
+  takeCardAnimation = false;
+  
+  constructor(){}
 
+  ngOnInit(): void {
+
+  }
+
+  takeCard(){
+    this.takeCardAnimation = true;
+  }
 }
