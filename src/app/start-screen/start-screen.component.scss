@@ -6,22 +6,132 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 96px;
+    font-size: 85px;
     color: #fff;
 
     img {
         height: 100vh;
+        width: 100%;
     }
-
+    
     p {
         text-align: center;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        top: 38%;
-        bottom: 62%;
-        height: 200px;
-        width: 200px;
-        margin: 0;
+        font-weight: 700;
     }
 }
+
+.center-title {
+    width: 5%;
+}
+
+.game-title-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+  .fire {
+    animation: animation 1s ease-in-out infinite alternate;
+    -moz-animation: animation 1s ease-in-out infinite alternate;
+    -webkit-animation: animation 1s ease-in-out infinite alternate;
+    -o-animation: animation 1s ease-in-out infinite alternate;
+
+    &:hover {
+        filter: brightness(1.75);
+        cursor: pointer;
+    }
+  }
+  
+  .burn {
+    animation: animation .65s ease-in-out infinite alternate;
+    -moz-animation: animation .65s ease-in-out infinite alternate;
+    -webkit-animation: animation .65s ease-in-out infinite alternate;
+    -o-animation: animation .65s ease-in-out infinite alternate;
+  }
+  
+  @keyframes animation
+  {
+  0% {text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34,
+    20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606,
+    0 -80px 70px #973716,
+    10px -90px 80px #451b0e;}
+  100% {text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #fefcc9,
+    -20px -20px 40px #feec85,
+    22px -42px 60px #ffae34,
+    -22px -58px 50px #ec760c,
+    0 -82px 80px #cd4606,
+    10px -90px 80px  #973716;}
+  }
+  
+  @-moz-keyframes animation
+  {
+  0% {text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34,
+    20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606,
+    0 -80px 70px #973716,
+    10px -90px 80px #451b0e;}
+  100% {text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #fefcc9,
+    -20px -20px 40px #feec85,
+    22px -42px 60px #ffae34,
+    -22px -58px 50px #ec760c,
+    0 -82px 80px #cd4606,
+    10px -90px 80px  #973716;}
+  }
+  
+  @-webkit-keyframes animation
+  {
+  0% {text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34,
+    20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606,
+    0 -80px 70px #973716,
+    10px -90px 80px #451b0e;}
+  100% {text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #fefcc9,
+    -20px -20px 40px #feec85,
+    22px -42px 60px #ffae34,
+    -22px -58px 50px #ec760c,
+    0 -82px 80px #cd4606,
+    10px -90px 80px  #973716;}
+  }
+  
+  @-o-keyframes animation
+  {
+  0% {text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34,
+    20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606,
+    0 -80px 70px #973716,
+    10px -90px 80px #451b0e;}
+  100% {text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #fefcc9,
+    -20px -20px 40px #feec85,
+    22px -42px 60px #ffae34,
+    -22px -58px 50px #ec760c,
+    0 -82px 80px #cd4606,
+    10px -90px 80px  #973716;}
+  }
