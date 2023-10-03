@@ -1,17 +1,8 @@
-.player {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+.player-badge {
+    margin-top: 32px;
     display: flex;
     align-items: center;
-    color: #fff;
-    font-size: 32px;
-    font-weight: 500;
-    width: 15%;
-    background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 12px 0px 8px 20px rgba(0, 0, 0, 0.4);
-
+    
     img {
         height: 60px;
         width: 60px;
