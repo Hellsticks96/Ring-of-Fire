@@ -29,6 +29,8 @@ export class GameComponent implements OnInit {
       this.takeCardAnimation = true;
     }
 
+    this.game.currentPlayer++;
+    this.game.currentPlayer = this.game.currentPlayer % this.game.players.length;
     setTimeout(() => {
       this.game.playedCards.push(this.currentCard);
       this.takeCardAnimation = false;
@@ -39,7 +41,9 @@ export class GameComponent implements OnInit {
     const dialogRef = this.dialog.open(DialogAddPlayerComponent);
 
     dialogRef.afterClosed().subscribe((name: string) => {
-      this.game.players.push(name);
+      if (name && name.length > 0) {
+        this.game.players.push(name);
+      }
     });
   }
 }
