@@ -76,3 +76,11 @@
     height: 64px;
     width: 64px;
 }
+
+.info-card {
+    position: absolute;
+    bottom: 32px;
+    left: calc(15% + 32px);
+    max-width: 15%;
+    padding: 8px;
+}

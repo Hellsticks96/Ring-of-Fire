@@ -2,6 +2,7 @@
     margin-top: 32px;
     display: flex;
     align-items: center;
+    padding: 8px 0px;
     
     img {
         height: 60px;
@@ -10,4 +11,14 @@
         margin-left: 16px;
         border-radius: 100%;
     }
+
+    span {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.player-active {
+    background-color: rgba(255, 255, 255 , 0.2);
+    box-shadow: -2px 4px 4px 0px rgba(255, 255, 255, 1.2);
+    font-size: 40px;
 }

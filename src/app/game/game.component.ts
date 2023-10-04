@@ -27,7 +27,6 @@ export class GameComponent implements OnInit {
     if (!this.takeCardAnimation) {
       this.currentCard = this.game.stack.pop();
       this.takeCardAnimation = true;
-      console.log(this.game.playedCards);
     }
 
     setTimeout(() => {
