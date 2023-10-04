@@ -1,8 +1,9 @@
 export class Game {
-    public players: string[] = ['Leo', 'Vinc', 'Adri', 'Kathi'];
+    public players: string[] = [];
     public stack: string[] = [];
     public playedCards: string[] = [];
     public currentPlayer: number = 0;
+    public hasPlayers: boolean = false;
 
     constructor(){
         for (let i = 1; i < 14; i++) {
@@ -12,7 +13,19 @@ export class Game {
             this.stack.push('hearts_'+ i);   
         }
         shuffle(this.stack);
+        this.checkPlayerCount();
     }
+
+    checkPlayerCount(){
+        setInterval(() => {
+            if (this.players.length >= 1) {
+                this.hasPlayers = true;
+            } else {
+                this.hasPlayers = false;
+            }
+
+        }, 500)    
+      }
 }
 
 function shuffle(array: any) {
@@ -33,3 +46,4 @@ function shuffle(array: any) {
   
     return array;
   }
+
